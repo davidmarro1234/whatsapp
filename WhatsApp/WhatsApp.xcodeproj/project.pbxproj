@@ -76,9 +76,9 @@
 			children = (
 				23746E76233FBD7C003C86D2 /* ViewControllers */,
 				23E9C7C8233CC53B00C5031B /* AppDelegate.swift */,
-				23E9C7CC233CC53B00C5031B /* Main.storyboard */,
 				23E9C7CF233CC53C00C5031B /* Assets.xcassets */,
 				23E9C7D1233CC53C00C5031B /* LaunchScreen.storyboard */,
+				23E9C7CC233CC53B00C5031B /* Main.storyboard */,
 				23E9C7D4233CC53C00C5031B /* Info.plist */,
 				23E9C7DA233CCF0500C5031B /* GoogleService-Info.plist */,
 			);
