@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23077CFF2340D326003637F0 /* chatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23077CFD2340D326003637F0 /* chatCell.swift */; };
+		23077D002340D326003637F0 /* chatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23077CFE2340D326003637F0 /* chatCell.xib */; };
+		23077D032340E540003637F0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23077D022340E540003637F0 /* LoginController.swift */; };
+		23077D052340E735003637F0 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23077D042340E735003637F0 /* SignupController.swift */; };
 		23746E75233FBD70003C86D2 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23746E74233FBD70003C86D2 /* MainController.swift */; };
 		23E9C7C9233CC53B00C5031B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9C7C8233CC53B00C5031B /* AppDelegate.swift */; };
 		23E9C7CB233CC53B00C5031B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9C7CA233CC53B00C5031B /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23077CFD2340D326003637F0 /* chatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatCell.swift; sourceTree = "<group>"; };
+		23077CFE2340D326003637F0 /* chatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = chatCell.xib; sourceTree = "<group>"; };
+		23077D022340E540003637F0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		23077D042340E735003637F0 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		23746E74233FBD70003C86D2 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		23E9C7C5233CC53B00C5031B /* WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E9C7C8233CC53B00C5031B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ViewControllers/AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,11 +52,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23077D012340D712003637F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		23746E76233FBD7C003C86D2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				23746E74233FBD70003C86D2 /* MainController.swift */,
 				23E9C7CA233CC53B00C5031B /* ViewController.swift */,
+				23077D022340E540003637F0 /* LoginController.swift */,
+				23077D042340E735003637F0 /* SignupController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -74,13 +91,16 @@
 		23E9C7C7233CC53B00C5031B /* WhatsApp */ = {
 			isa = PBXGroup;
 			children = (
+				23077D012340D712003637F0 /* View */,
 				23746E76233FBD7C003C86D2 /* ViewControllers */,
 				23E9C7C8233CC53B00C5031B /* AppDelegate.swift */,
 				23E9C7CF233CC53C00C5031B /* Assets.xcassets */,
-				23E9C7D1233CC53C00C5031B /* LaunchScreen.storyboard */,
-				23E9C7CC233CC53B00C5031B /* Main.storyboard */,
 				23E9C7D4233CC53C00C5031B /* Info.plist */,
 				23E9C7DA233CCF0500C5031B /* GoogleService-Info.plist */,
+				23077CFD2340D326003637F0 /* chatCell.swift */,
+				23077CFE2340D326003637F0 /* chatCell.xib */,
+				23E9C7D1233CC53C00C5031B /* LaunchScreen.storyboard */,
+				23E9C7CC233CC53B00C5031B /* Main.storyboard */,
 			);
 			path = WhatsApp;
 			sourceTree = "<group>";
@@ -165,6 +185,7 @@
 				23E9C7D3233CC53C00C5031B /* LaunchScreen.storyboard in Resources */,
 				23E9C7DB233CCF0500C5031B /* GoogleService-Info.plist in Resources */,
 				23E9C7D0233CC53C00C5031B /* Assets.xcassets in Resources */,
+				23077D002340D326003637F0 /* chatCell.xib in Resources */,
 				23E9C7CE233CC53B00C5031B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E9C7CB233CC53B00C5031B /* ViewController.swift in Sources */,
+				23077CFF2340D326003637F0 /* chatCell.swift in Sources */,
 				23746E75233FBD70003C86D2 /* MainController.swift in Sources */,
+				23077D052340E735003637F0 /* SignupController.swift in Sources */,
 				23E9C7C9233CC53B00C5031B /* AppDelegate.swift in Sources */,
+				23077D032340E540003637F0 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

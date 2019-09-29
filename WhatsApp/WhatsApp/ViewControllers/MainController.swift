@@ -27,15 +27,10 @@ class MainController: UIViewController {
        
     }
     
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-  {
-      if segue.identifier == "fakeButtonPressed"
-      {
-       
-      }
-  }
+
 
     
     @IBAction func goToSignUp(_ sender: Any) {
+        performSegue(withIdentifier: "goToSignUp", sender: self)
     }
 }
