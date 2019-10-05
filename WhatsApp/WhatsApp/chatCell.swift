@@ -12,10 +12,13 @@ class chatCell: UITableViewCell {
     
 // MARK: - Outlets
     
-    @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var labelUser: UILabel!
+    
     @IBOutlet weak var labelMessage: UILabel!
     
+    @IBOutlet weak var backgroundMessage: UIView!
+    
+    @IBOutlet weak var imgAvatar: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

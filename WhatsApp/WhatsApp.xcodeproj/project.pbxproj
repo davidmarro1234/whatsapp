@@ -11,7 +11,9 @@
 		23077D002340D326003637F0 /* chatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23077CFE2340D326003637F0 /* chatCell.xib */; };
 		23077D032340E540003637F0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23077D022340E540003637F0 /* LoginController.swift */; };
 		23077D052340E735003637F0 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23077D042340E735003637F0 /* SignupController.swift */; };
+		233AD5B7234645B00022BC68 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AD5B6234645B00022BC68 /* Message.swift */; };
 		23746E75233FBD70003C86D2 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23746E74233FBD70003C86D2 /* MainController.swift */; };
+		23C002D02342590C0098CAB9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C002CF2342590C0098CAB9 /* ChatViewController.swift */; };
 		23E9C7C9233CC53B00C5031B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9C7C8233CC53B00C5031B /* AppDelegate.swift */; };
 		23E9C7CB233CC53B00C5031B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9C7CA233CC53B00C5031B /* ViewController.swift */; };
 		23E9C7CE233CC53B00C5031B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E9C7CC233CC53B00C5031B /* Main.storyboard */; };
@@ -26,7 +28,9 @@
 		23077CFE2340D326003637F0 /* chatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = chatCell.xib; sourceTree = "<group>"; };
 		23077D022340E540003637F0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		23077D042340E735003637F0 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		233AD5B6234645B00022BC68 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		23746E74233FBD70003C86D2 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		23C002CF2342590C0098CAB9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		23E9C7C5233CC53B00C5031B /* WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E9C7C8233CC53B00C5031B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ViewControllers/AppDelegate.swift; sourceTree = "<group>"; };
 		23E9C7CA233CC53B00C5031B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,11 +56,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23077D012340D712003637F0 /* View */ = {
+		23077D012340D712003637F0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				233AD5B6234645B00022BC68 /* Message.swift */,
 			);
-			path = View;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		23746E76233FBD7C003C86D2 /* ViewControllers */ = {
@@ -66,6 +71,7 @@
 				23E9C7CA233CC53B00C5031B /* ViewController.swift */,
 				23077D022340E540003637F0 /* LoginController.swift */,
 				23077D042340E735003637F0 /* SignupController.swift */,
+				23C002CF2342590C0098CAB9 /* ChatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -91,7 +97,7 @@
 		23E9C7C7233CC53B00C5031B /* WhatsApp */ = {
 			isa = PBXGroup;
 			children = (
-				23077D012340D712003637F0 /* View */,
+				23077D012340D712003637F0 /* Models */,
 				23746E76233FBD7C003C86D2 /* ViewControllers */,
 				23E9C7C8233CC53B00C5031B /* AppDelegate.swift */,
 				23E9C7CF233CC53C00C5031B /* Assets.xcassets */,
@@ -242,7 +248,9 @@
 				23E9C7CB233CC53B00C5031B /* ViewController.swift in Sources */,
 				23077CFF2340D326003637F0 /* chatCell.swift in Sources */,
 				23746E75233FBD70003C86D2 /* MainController.swift in Sources */,
+				23C002D02342590C0098CAB9 /* ChatViewController.swift in Sources */,
 				23077D052340E735003637F0 /* SignupController.swift in Sources */,
+				233AD5B7234645B00022BC68 /* Message.swift in Sources */,
 				23E9C7C9233CC53B00C5031B /* AppDelegate.swift in Sources */,
 				23077D032340E540003637F0 /* LoginController.swift in Sources */,
 			);

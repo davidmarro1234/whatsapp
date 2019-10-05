@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class LoginController: UIViewController {
     
@@ -34,18 +36,24 @@ class LoginController: UIViewController {
     @IBAction func textEmail(_ sender: Any) {
     }
     
-    @IBAction func buttonContinue(_ sender: Any) {
-    }
+
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonContinuePressed(_ sender: Any) {
+        print("button pressed")
+        SVProgressHUD.show()
+               Auth.auth().signIn(withEmail: textEmail.text!, password: textPassword.text!) { (user, error) in
+                   if(error != nil){
+                       print("error! ", error)}
+                   else
+                   {
+                       print("Login Successful")
+                       SVProgressHUD.dismiss()
+                       self.performSegue(withIdentifier: "goToChat", sender: self)
+                   }
+            }
     }
-    */
+
+
 
 }

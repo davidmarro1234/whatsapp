@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
+
 class SignupController: UIViewController {
 
 //    MARK: - OUTLETS
@@ -26,12 +28,16 @@ class SignupController: UIViewController {
 //    MARK: - ACTIONS
     @IBAction func buttonContinuePressed(_ sender: Any) {
 //        creo nuovo user con firebase
+        SVProgressHUD.show()
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             if error != nil {
+                print("Errore enlla registrazione!")
                 print(error)}else{
                     print("Registration Succesfull!")
+                SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier:"goToChat", sender: self)
                 }
+            
             }
         }
     
